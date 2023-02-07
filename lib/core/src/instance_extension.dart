@@ -197,7 +197,7 @@ extension Inst on FlowerInterface {
     final newKey = key ?? _getKey(S, tag);
 
     if (!_singl.containsKey(newKey)) {
-      Flower.log('Instance "$newKey" is not registered.', isError: true);
+      Flower.log('Instance "$newKey" is not registered.', tag: "Error");
       return null;
     } else {
       return _singl[newKey];
@@ -337,7 +337,7 @@ extension Inst on FlowerInterface {
     final newKey = key ?? _getKey(S, tag);
 
     if (!_singl.containsKey(newKey)) {
-      Flower.log('Instance "$newKey" already removed.', isError: true);
+      Flower.log('Instance "$newKey" already removed.', tag: "Error");
       return false;
     }
 
@@ -356,7 +356,7 @@ extension Inst on FlowerInterface {
       Flower.log(
         // ignore: lines_longer_than_80_chars
         '"$newKey" has been marked as permanent, SmartManagement is not authorized to delete it.',
-        isError: true,
+        tag: "Error",
       );
       return false;
     }
@@ -383,7 +383,7 @@ extension Inst on FlowerInterface {
       } else {
         _singl.remove(newKey);
         if (_singl.containsKey(newKey)) {
-          Flower.log('Error removing object "$newKey"', isError: true);
+          Flower.log('Error removing object "$newKey"', tag: "Error");
         } else {
           Flower.log('"$newKey" deleted from memory');
         }
@@ -428,7 +428,7 @@ extension Inst on FlowerInterface {
     if (builder.permanent && !force) {
       Flower.log(
         '''Instance "$newKey" is permanent. Use [force = true] to force the restart.''',
-        isError: true,
+        tag: "Error",
       );
       return;
     }

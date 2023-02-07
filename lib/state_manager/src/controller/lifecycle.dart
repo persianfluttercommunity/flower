@@ -67,4 +67,4 @@ mixin LifeCycleMixin {
 //   }
 }
 
-mixin FatimaServiceMixin {}
+mixin FlowerServiceMixin {}

@@ -4,6 +4,7 @@ import 'package:flower/flower_interface.dart';
 
 export 'core/flower_core.dart';
 export 'state_manager/flower_state_manager.dart';
+export 'navigation/flower_navigation.dart';
 
 class _FlowerImpl extends FlowerInterface {}
 
