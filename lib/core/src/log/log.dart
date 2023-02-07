@@ -1,6 +1,5 @@
 import 'dart:developer' as developer;
 
-import 'package:flower/core/src/log_profile.dart';
 import 'package:flower/flower.dart';
 
 ///VoidCallback from logs

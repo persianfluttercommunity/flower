@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'flower.dart';
 
 abstract class FlowerInterface {
-  // SmartManagement smartManagement = SmartManagement.full;
+  SmartManagement smartManagement = SmartManagement.full;
   bool isLogEnable = kDebugMode;
   Logger log = defaultLogger;
 
