@@ -6,37 +6,37 @@ Flower is a flutter package for increase production speed and reduce time and ea
 
 It contains these tools for producing applications, faster:
 
- - **UI Kit** based on Material library with perfect theme managing tools.
+ - **UI Kit** based on Material library with perfect theme managing tool named **Styler**.
  -  **Navigation** system to navigate easy between pages and dialogs and etc, without any context.
  - **State Management** in MVC Structure with  two simple **Controller** and **Updater** classes.
  - **Storage** system that works like Android **Shared Preferences**.
 
 ## Documentation
-you can see full documentation of **Fatima** in this link:
-https://fatima.smae.ir
+you can see full documentation of **Flower** in this link:
+https://flower.smae.ir
 
 ## Usage
 
-[Example](https://github.com/smae1993/fatima/blob/master/example/lib/main.dart)
+[Example](https://github.com/smae1993/flower/blob/master/example/lib/main.dart)
 
 To use this package :
 
-* add the dependency to your [pubspec.yaml](https://github.com/smae1993/fatima/blob/master/example/pubspec.yaml) file.
+* add the dependency to your [pubspec.yaml](https://github.com/smae1993/flower/blob/master/example/pubspec.yaml) file.
 
 ```yaml
   dependencies:
     flutter:
       sdk: flutter
-    fatima: latest version
+    flower: latest version
 ```
 
 ### How to use
 
 ```dart
-import  'package:fatima/fatima.dart';
+import  'package:flower/flower.dart';
 
 void main() {
-  runApp(FatimaApp()); // instead of MaterialApp
+  runApp(FlowerApp()); // instead of MaterialApp
 }
 
 ```
