@@ -1,4 +1,5 @@
 // import 'package:fatima/state_manager/controller/bindings_interface.dart';
+import 'package:flower/flower.dart';
 import 'package:flutter/widgets.dart';
 
 // import '../routes/get_route.dart';
@@ -89,7 +90,7 @@ mixin IFlowerNavigation {
 
   Future<T?>? offAll<T>(
     Widget Function() page, {
-    bool Function(FatimaPage route)? predicate,
+    bool Function(FlowerPage route)? predicate,
     bool opaque = true,
     bool? popGesture,
     int? id,
@@ -129,7 +130,7 @@ mixin IFlowerNavigation {
 
   Future<T?>? offNamedUntil<T>(
     String page, {
-    bool Function(FatimaPage route)? predicate,
+    bool Function(FlowerPage route)? predicate,
     dynamic arguments,
     int? id,
     Map<String, String>? parameters,
@@ -137,13 +138,13 @@ mixin IFlowerNavigation {
 
   Future<T?> toNamedAndOffUntil<T>(
     String page,
-    bool Function(FatimaPage) predicate, [
+    bool Function(FlowerPage) predicate, [
     Object? data,
   ]);
 
   Future<T?> offUntil<T>(
     Widget Function() page,
-    bool Function(FatimaPage) predicate, [
+    bool Function(FlowerPage) predicate, [
     Object? arguments,
   ]);
 
@@ -153,7 +154,7 @@ mixin IFlowerNavigation {
 
   Future<R?> backAndtoNamed<T, R>(String page, {T? result, Object? arguments});
 
-  void backUntil(bool Function(FatimaPage) predicate);
+  void backUntil(bool Function(FlowerPage) predicate);
 
   void goToUnknownPage([bool clearPages = true]);
 }

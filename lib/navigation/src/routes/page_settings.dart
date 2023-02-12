@@ -1,6 +1,5 @@
+import 'package:flower/flower.dart';
 import 'package:flutter/widgets.dart';
-
-import 'package:fatima/fatima.dart';
 
 extension PageArgExt on BuildContext {
   RouteSettings? get settings {
@@ -47,8 +46,8 @@ extension PageArgExt on BuildContext {
     return router.routerDelegate;
   }
 
-  FatimaDelegate get navigation {
-    return router.routerDelegate as FatimaDelegate;
+  FlowerDelegate get navigation {
+    return router.routerDelegate as FlowerDelegate;
   }
 }
 

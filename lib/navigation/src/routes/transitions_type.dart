@@ -21,6 +21,6 @@ enum Transition {
   native,
 }
 
-typedef FatimaPageBuilder = Widget Function();
-typedef FatimaRouteAwarePageBuilder<T> = Widget Function(
+typedef FlowerPageBuilder = Widget Function();
+typedef FlowerRouteAwarePageBuilder<T> = Widget Function(
     [FlowerPageRoute<T>? route]);

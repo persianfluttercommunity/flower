@@ -1,10 +1,11 @@
+import 'package:flower/flower.dart';
 import 'package:flutter/widgets.dart';
 
 class FlowerNavigator extends Navigator {
   FlowerNavigator.onGenerateRoute({
     GlobalKey<NavigatorState>? key,
     bool Function(Route<dynamic>, dynamic)? onPopPage,
-    required List<FatimaPage> pages,
+    required List<FlowerPage> pages,
     List<NavigatorObserver>? observers,
     bool reportsRouteUpdateToEngine = false,
     TransitionDelegate? transitionDelegate,
@@ -27,7 +28,7 @@ class FlowerNavigator extends Navigator {
                 pages.where((element) => element.name == settings.name);
             if (selectedPageList.isNotEmpty) {
               final selectedPage = selectedPageList.first;
-              return FatimaPageRoute(
+              return FlowerPageRoute(
                 page: selectedPage.page,
                 settings: settings,
               );
@@ -48,7 +49,7 @@ class FlowerNavigator extends Navigator {
   FlowerNavigator({
     GlobalKey<NavigatorState>? key,
     bool Function(Route<dynamic>, dynamic)? onPopPage,
-    required List<FatimaPage> pages,
+    required List<FlowerPage> pages,
     List<NavigatorObserver>? observers,
     bool reportsRouteUpdateToEngine = false,
     TransitionDelegate? transitionDelegate,

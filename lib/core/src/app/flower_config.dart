@@ -16,8 +16,8 @@ class FlowerConfig {
   final List<Bind> binds;
   final Duration? transitionDuration;
   final bool? defaultGlobalState;
-  final List<FatimaPage>? fatimaPages;
-  final FatimaPage? unknownRoute;
+  final List<FlowerPage>? flowerPages;
+  final FlowerPage? unknownRoute;
   final RouteInformationProvider? routeInformationProvider;
   final RouteInformationParser<Object>? routeInformationParser;
   final RouterDelegate<Object>? routerDelegate;
@@ -49,7 +49,7 @@ class FlowerConfig {
     required this.binds,
     required this.transitionDuration,
     required this.defaultGlobalState,
-    required this.fatimaPages,
+    required this.flowerPages,
     required this.unknownRoute,
     required this.routeInformationProvider,
     required this.routeInformationParser,
