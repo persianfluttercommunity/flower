@@ -1,7 +1,7 @@
 name: flower
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: A Light Weight StateManager Styler Library.
+version: 1.0.0
+homepage: https://github.com/smae1993/flower
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
@@ -44,17 +44,27 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Vazir
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Vazirmatn-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Vazirmatn-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/Vazirmatn-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/Vazirmatn-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Vazirmatn-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Vazirmatn-Thin.ttf
+          weight: 100
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages

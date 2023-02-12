@@ -1,3 +1,3 @@
-## 0.0.1
+## [1.0.0] - 12 February 2023
 
-* TODO: Describe initial release.
+* initialize package
