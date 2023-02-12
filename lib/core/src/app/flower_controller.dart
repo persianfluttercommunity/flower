@@ -253,15 +253,16 @@ class FlowerController extends FullLifeCycleController {
   }
 
   void setTheme(ThemeData value) {
-    if (uiConfig.darkTheme == null) {
-      uiConfig.lightTheme = value;
-    } else {
+    try {
       if (value.brightness == Brightness.light) {
         uiConfig.lightTheme = value;
       } else {
         uiConfig.darkTheme = value;
       }
+    } catch (e) {
+      Flower.log(tag: "Error", "Error while setting theme");
     }
+
     update();
   }
 

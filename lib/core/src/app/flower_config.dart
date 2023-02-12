@@ -1,4 +1,3 @@
-import 'package:flower/core/flower_core.dart';
 import 'package:flower/flower.dart';
 import 'package:flutter/material.dart';
 
