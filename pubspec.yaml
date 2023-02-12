@@ -1,6 +1,6 @@
 name: flower
 description: A Light Weight StateManager, Navigator and Styler Library for fast production and easy to use.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/smae1993/flower
 
 environment:
