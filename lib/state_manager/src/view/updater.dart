@@ -1,7 +1,4 @@
-import 'dart:async';
-
 import 'package:flower/flower.dart';
-import 'package:flower/state_manager/src/controller/flower_state.dart';
 // import 'package:fatima/state_manager/src/controller/fatima_state.dart';
 import 'package:flutter/material.dart';
 
