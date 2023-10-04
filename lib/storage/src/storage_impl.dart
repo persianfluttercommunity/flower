@@ -3,7 +3,6 @@ import 'package:flower/flower.dart';
 import 'package:flutter/widgets.dart';
 // import 'package:get/utils.dart';
 import 'storage/html.dart' if (dart.library.io) 'storage/io.dart';
-import 'value.dart';
 
 /// Instantiate Storage to access storage driver apis
 class Storage {
