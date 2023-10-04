@@ -604,14 +604,14 @@ extension FlowerNavigationExt on FlowerInterface {
   }
 
   FlowerDelegate searchDelegate(dynamic k) {
-    FlowerDelegate _key;
+    FlowerDelegate key;
     if (k == null) {
-      _key = Flower.rootController.rootDelegate;
+      key = Flower.rootController.rootDelegate;
     } else {
       if (!keys.containsKey(k)) {
         throw 'Route id ($k) not found';
       }
-      _key = keys[k]!;
+      key = keys[k]!;
     }
 
     // if (_key.listenersLength == 0 && !testMode) {
@@ -624,7 +624,7 @@ extension FlowerNavigationExt on FlowerInterface {
     //   """;
     // }
 
-    return _key;
+    return key;
   }
 
   /// give current arguments
