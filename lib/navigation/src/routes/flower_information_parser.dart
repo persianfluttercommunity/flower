@@ -27,7 +27,7 @@ class FlowerInformationParser extends RouteInformationParser<RouteDecoder> {
 
     Flower.log('FlowerInformationParser: route location: $location');
 
-    final routeName = location ?? initialRoute;
+    final routeName = location;
 
     return SynchronousFuture(RouteDecoder.fromRoute(routeName));
   }
