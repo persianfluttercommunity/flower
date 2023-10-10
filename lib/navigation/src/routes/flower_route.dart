@@ -168,7 +168,7 @@ class FlowerPage<T> extends Page<T> {
   static PathDecoded _nameToRegex(String path) {
     var keys = <String?>[];
 
-    String _replace(Match pattern) {
+    String replace(Match pattern) {
       var buffer = StringBuffer('(?:');
 
       if (pattern[1] != null) buffer.write('.');
@@ -180,7 +180,7 @@ class FlowerPage<T> extends Page<T> {
     }
 
     var stringPath = '$path/?'
-        .replaceAllMapped(RegExp(r'(\.)?:(\w+)(\?)?'), _replace)
+        .replaceAllMapped(RegExp(r'(\.)?:(\w+)(\?)?'), replace)
         .replaceAll('//', '/');
 
     return PathDecoded(RegExp('^$stringPath\$'), keys);

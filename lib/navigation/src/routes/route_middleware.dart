@@ -131,8 +131,8 @@ class MiddlewareRunner {
   final List<FlowerMiddleware>? _middlewares;
 
   List<FlowerMiddleware> _getMiddlewares() {
-    final _m = _middlewares ?? <FlowerMiddleware>[];
-    return _m
+    final m = _middlewares ?? <FlowerMiddleware>[];
+    return m
       ..sort(
         (a, b) => (a.priority ?? 0).compareTo(b.priority ?? 0),
       );
@@ -199,34 +199,34 @@ class PageRedirect {
   FlowerPageRoute<T> getPageToRoute<T>(
       FlowerPage rou, FlowerPage? unk, BuildContext context) {
     while (needRecheck(context)) {}
-    final _r = (isUnknown ? unk : rou)!;
+    final r = (isUnknown ? unk : rou)!;
 
     return FlowerPageRoute<T>(
-      page: _r.page,
-      parameter: _r.parameters,
-      alignment: _r.alignment,
-      title: _r.title,
-      maintainState: _r.maintainState,
-      routeName: _r.name,
-      settings: _r,
-      curve: _r.curve,
-      showCupertinoParallax: _r.showCupertinoParallax,
-      gestureWidth: _r.gestureWidth,
-      opaque: _r.opaque,
-      customTransition: _r.customTransition,
-      bindings: _r.bindings,
-      binding: _r.binding,
-      binds: _r.binds,
+      page: r.page,
+      parameter: r.parameters,
+      alignment: r.alignment,
+      title: r.title,
+      maintainState: r.maintainState,
+      routeName: r.name,
+      settings: r,
+      curve: r.curve,
+      showCupertinoParallax: r.showCupertinoParallax,
+      gestureWidth: r.gestureWidth,
+      opaque: r.opaque,
+      customTransition: r.customTransition,
+      bindings: r.bindings,
+      binding: r.binding,
+      binds: r.binds,
       transitionDuration:
-          _r.transitionDuration ?? Flower.defaultTransitionDuration,
+          r.transitionDuration ?? Flower.defaultTransitionDuration,
       reverseTransitionDuration:
-          _r.reverseTransitionDuration ?? Flower.defaultTransitionDuration,
+          r.reverseTransitionDuration ?? Flower.defaultTransitionDuration,
       // performIncomeAnimation: _r.performIncomeAnimation,
       // performOutGoingAnimation: _r.performOutGoingAnimation,
-      transition: _r.transition,
-      popGesture: _r.popGesture,
-      fullscreenDialog: _r.fullscreenDialog,
-      middlewares: _r.middlewares,
+      transition: r.transition,
+      popGesture: r.popGesture,
+      fullscreenDialog: r.fullscreenDialog,
+      middlewares: r.middlewares,
     );
   }
 

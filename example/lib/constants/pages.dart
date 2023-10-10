@@ -4,6 +4,7 @@ import 'package:flower/flower.dart';
 List<FlowerPage<dynamic>>? pages = [
   FlowerPage(
     name: "/",
+    // opaque: ,
     page: () => const HomePage(),
   )
 ];

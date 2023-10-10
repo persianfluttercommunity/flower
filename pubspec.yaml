@@ -1,11 +1,11 @@
 name: flower
 description: A Light Weight StateManager, Navigator and Styler Library for fast production and easy to use.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/smae1993/flower
 
 environment:
-  sdk: '>=2.18.2 <3.0.0'
-  flutter: ">=1.17.0"
+  sdk: '>=3.1.2 <4.0.0'
+
 
 dependencies:
   flutter:

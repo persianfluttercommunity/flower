@@ -1,8 +1,8 @@
 import 'package:flower/flower.dart';
 import 'package:flutter/material.dart';
 
-abstract class FatimaView<T> extends StatelessWidget {
-  const FatimaView({Key? key}) : super(key: key);
+abstract class FlowerView<T> extends StatelessWidget {
+  const FlowerView({Key? key}) : super(key: key);
 
   final String? tag = null;
 
